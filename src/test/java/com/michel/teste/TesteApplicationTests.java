@@ -55,4 +55,13 @@ class TesteApplicationTests {
 				System.out.println(ex);
 		}
 	}
+
+	@Test
+	void testDeleteMethod() {
+		try {
+			repository.deleteAll();
+		}catch(Exception e) {
+
+		}
+	}
 }

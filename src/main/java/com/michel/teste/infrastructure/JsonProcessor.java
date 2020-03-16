@@ -15,6 +15,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class JsonProcessor {
 
@@ -54,7 +55,7 @@ public class JsonProcessor {
 
             }
             //transacoes.stream().distinct().forEach( t -> System.out.println(t.toString()));
-            return transacoes;
+            return  transacoes.stream().distinct().collect(Collectors.toList());
 
 
         }catch(Exception ex) {

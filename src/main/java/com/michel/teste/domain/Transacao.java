@@ -28,4 +28,6 @@ public class Transacao {
     private String industry;
     @Getter(AccessLevel.PUBLIC)
     private String origin;
+
+
 }
